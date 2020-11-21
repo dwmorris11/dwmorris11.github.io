@@ -1,0 +1,29 @@
+#projects {
+    visibility: collapse;
+    display: block;
+}
+
+#hobbies {
+    visibility: collapse;
+    display: block;
+}
+
+#resume {
+    visibility: collapse;
+    display: block;
+}
+
+#home {
+    visibility: visible;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.pages {
+    height: 100vh;
+    width: 100vw;
+    color: var(--white);
+    font-family: var(--openSans);
+    font-size: 1.5em;
+}

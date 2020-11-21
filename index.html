@@ -4,11 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dustin's Portfolio</title>
+    <title>Dustin's Static Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="internallinks.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <script>
+        window.onload = function () {
+            const doorElement = document.getElementById('center-door');
+            const leftDoor = document.getElementById('left-door');
+            const behindDoor = document.getElementById('behind-door');
+            const boat = document.getElementById('boat');
+            const home = document.getElementById('home');
+            const projects = document.getElementById('projects');
+            const hobbies = document.getElementById('hobbies');
+            const resume = document.getElementById('resume');
+
+            const homeBtn = document.getElementById('home-button');
+            const projectsBtn = document.getElementById('projects-button');
+            const hobbiesBtn = document.getElementById('hobbies-button');
+            const resumeBtn = document.getElementById('resume-button');
+
+            leftDoor.addEventListener('transitionend', function (event) {
+                doorElement.remove();
+                behindDoor.style.display = 'grid';
+            });
+            const config = {
+                attributes: true
+            };
+            homeBtn.addEventListener('click', (event) => {
+
+                projects.style.visibility = 'collapse';
+                hobbies.style.visibility = 'collapse';
+                resume.style.visibility = 'collapse';
+                home.style.visibility = 'visible';
+
+
+                projects.style.display = 'none';
+                hobbies.style.display = 'none';
+                resume.style.display = 'none';
+                home.style.display = 'grid';
+            });
+            projectsBtn.addEventListener('click', (event) => {
+
+                projects.style.visibility = 'visible';
+                hobbies.style.visibility = 'collapse';
+                resume.style.visibility = 'collapse';
+                home.style.visibility = 'collapse';
+
+
+                projects.style.display = 'block';
+                hobbies.style.display = 'none';
+                resume.style.display = 'none';
+                home.style.display = 'none';
+            });
+            resumeBtn.addEventListener('click', (event) => {
+
+                projects.style.visibility = 'collapse';
+                hobbies.style.visibility = 'collapse';
+                resume.style.visibility = 'visible';
+                home.style.visibility = 'collapse';
+
+                projects.style.display = 'none';
+                hobbies.style.display = 'none';
+                resume.style.display = 'block';
+                home.style.display = 'none';
+            });
+            hobbiesBtn.addEventListener('click', (event) => {
+
+                projects.style.visibility = 'collapse';
+                hobbies.style.visibility = 'visible';
+                resume.style.visibility = 'collapse';
+                home.style.visibility = 'collapse';
+
+
+                projects.style.display = 'none';
+                hobbies.style.display = 'block';
+                resume.style.display = 'none';
+                home.style.display = 'none';
+            });
+
+            const cb = (mutationList, observer) => {
+                for (const mutation of mutationList) {
+                    if (mutation.type === 'attributes') {
+                        setTimeout(() => {
+                            behindDoor.remove();
+                            observer.disconnect();
+                        }, 6000);
+                    }
+                }
+            };
+            const observer = new MutationObserver(cb);
+            observer.observe(behindDoor, config);
+        };
+    </script>
 </head>
 
 <body>
-    Welcome
+    <div id="main">
+        <div id="center-door" class="center-door">
+            <div class="double-door" id="double-door">
+                <img src="./resources/leftdoor.png" class="left-door door" id="left-door" />
+                <img src="./resources/door.png" class="right-door door" id="right-door" />
+            </div>
+        </div>
+        <div id="behind-door">
+            <div id="bubble" class="bubble">
+                <img src="./resources/bubble.svg" id="bubble-photo" class="bubble" />
+                <p id="bubble-text">Woof! I am Tulip. The cutest puppy in the world. Let me tell you about the greatest
+                    human alive;
+                    my human:<span id="name">Dustin Morris</span>!
+                </p>
+            </div>
+            <div id="tulip" class="tulip">
+                <img src="./resources/TulipOnly.png" class="tulip" id="tulip-photo" />
+            </div>
+
+        </div>
+        <nav>
+            <div class="local-links">
+                <ul class="links local">
+                    <li id="home-button">
+                        HOME
+                    </li>
+                    <li id="projects-button">PROJECTS</li>
+                    <li id="hobbies-button">HOBBIES</li>
+                    <li id="resume-button"><span id="resume-link">RESUME</span></li>
+                </ul>
+            </div>
+            <header id="header"><span id="name-head">Dustin Morris</span></header>
+            <div class="external-links">
+                <ul class="links external">
+                    <li id="css-button">
+                        <div class="gradient-border" id="box">
+                            COOL CSS
+                        </div>
+                    </li>
+                    <li><a href="https://github.com/dwmorris11" target="_blank"><img src="resources/github.png"
+                                alt="Github" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/dustin-morris-se/" target="_blank"><img
+                                src="resources/linkedin.png" alt="LinkedIn" width="32px" height="32px" /></a>
+                    </li>
+                    <li><a href="http://dustinnuc.medium.com" target="_blank"><img src="resources/medium.png"
+                                alt="Medium" width="32px" height="32px" /></a></li>
+                </ul>
+            </div>
+        </nav>
+        <article>
+            <div id="home" class="pages">
+                <div id="me-border">
+                    <div id="outer-me-border">
+                        <img src="resources/me.jpg" id="me-pic">
+                    </div>
+                </div>
+                <div id="info-border">
+                    <p class="info-para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui velit vel neque saepe iusto id
+                        maiores numquam, nam reiciendis obcaecati error ipsa harum eum eos? Placeat earum perferendis
+                        excepturi.
+                    </p>
+                    <p class="info-para">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laboriosam sit amet libero
+                        distinctio assumenda qui quis quasi minus! Alias vero quisquam eaque eligendi repellendus quia
+                        dolorem numquam voluptatibus tempora?
+                    </p>
+                </div>
+            </div>
+            <div id="projects" class="pages">
+                <br><br><br><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa explicabo dolores eos
+                    inventore quis iste, minima consectetur est. Delectus expedita ea illo amet consequatur facilis
+                    corrupti nobis, eveniet beatae.</p>
+            </div>
+            <div id="resume" class="pages">
+                <embed src="resources/V9_Dustin_Morris_resume.pdf" width="100%" height="100%" />
+            </div>
+            <div id="hobbies" class="pages">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nam? Nam, soluta? Facilis sint
+                    commodi aperiam enim veniam recusandae? Tenetur architecto molestiae consequatur repellendus
+                    cupiditate iure possimus laboriosam quod quo.</p>
+            </div>
+        </article>
+    </div>
 </body>
 
 </html>
