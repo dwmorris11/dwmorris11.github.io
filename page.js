@@ -2,6 +2,7 @@ window.onload = function () {
     const doorElement = document.getElementById('center-door');
     const leftDoor = document.getElementById('left-door');
     const behindDoor = document.getElementById('behind-door');
+    const behindDoorStyle = getComputedStyle(behindDoor);
     const boat = document.getElementById('boat');
     const home = document.getElementById('home');
     const projects = document.getElementById('projects');
@@ -15,7 +16,7 @@ window.onload = function () {
 
     leftDoor.addEventListener('transitionend', function (event) {
         doorElement.remove();
-        const behindDoorStyle = getComputedStyle(behindDoor);
+        debugger;
         if (behindDoorStyle.display !== 'none') {
             behindDoor.style.display = 'grid';
         }
