@@ -45,6 +45,7 @@ li {
     margin: 5px;
     font-family: var(--openSans);
     border: solid var(--borderWidth);
+    width: fit-content;
 }
 
 #name-head {
@@ -97,6 +98,11 @@ a:visited li {
 .local li {
     background-color: var(--darkbyz);
     border-color: var(--bronze);
+}
+
+.external li {
+    align-content: flex-end;
+    justify-content: flex-end;
 }
 
 #box {

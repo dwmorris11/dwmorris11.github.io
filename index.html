@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="internallinks.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,7 +31,10 @@
 
             leftDoor.addEventListener('transitionend', function (event) {
                 doorElement.remove();
-                behindDoor.style.display = 'grid';
+                const behindDoorStyle = getComputedStyle(behindDoor);
+                if (behindDoorStyle.display !== 'none') {
+                    behindDoor.style.display = 'grid';
+                }
             });
             const config = {
                 attributes: true

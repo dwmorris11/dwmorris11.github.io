@@ -1,0 +1,37 @@
+@media screen and (max-width: 740px) {
+    .external {
+        flex-flow: column;
+        align-self: center;
+        justify-self: flex-end;
+    }
+
+    .external li {
+        align-self: center;
+    }
+
+    #css-button {
+        align-self: center;
+    }
+
+    #me-border {
+        border-color: transparent;
+        grid-area: 1/5/8/9;
+    }
+
+    #right-door {
+        display: none;
+    }
+
+    #left-door {
+        width: 100vw;
+    }
+
+    #info-border {
+        overflow-y: scroll;
+        grid-area: 3/1/10/13;
+    }
+
+    #behind-door {
+        display: none;
+    }
+}
