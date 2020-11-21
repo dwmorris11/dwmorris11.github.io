@@ -69,6 +69,7 @@ li {
 
 .links li:hover {
     animation: pulse 1.5s ease-in-out;
+    cursor: pointer;
 }
 
 .local {
