@@ -203,6 +203,7 @@ q:after {
 #me-pic {
     height: 98%;
     width: 99%;
+    border-radius: 50%;
 }
 
 #info-border {
@@ -218,12 +219,14 @@ q:after {
     border: 5px ridge var(--darkbyz);
     grid-area: 3/2/10/6;
     z-index: 5;
+    border-radius: 50%;
 }
 
 #outer-me-border {
     border: 10px ridge var(--bronze);
     grid-area: 3/2/10/6;
     z-index: 5;
+    border-radius: 50%;
 }
 
 .rolling-pin {
