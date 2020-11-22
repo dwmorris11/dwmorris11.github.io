@@ -155,12 +155,60 @@ a:visited li {
     background-size: 300% 300%;
 }
 
+q {
+    font-size: 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+
+q:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 5px;
+    font-size: 1.5em;
+}
+
+q:after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 5px;
+    font-size: 1.5em;
+}
+
+#author {
+    font-style: italic;
+}
+
+#education-logos {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
 #me-pic {
     height: 98%;
     width: 99%;
 }
 
 #info-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px double var(--darkbyz);
     grid-area: 3/8/10/12;
 }
