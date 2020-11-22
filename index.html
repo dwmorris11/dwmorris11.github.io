@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="internallinks.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="project.css">
     <script src="page.js" defer></script>
 </head>
 
@@ -80,10 +81,8 @@
                     <div class="line">does NOT use</div>
                     <div class="line">JS libraries!</div>
                 </div>
-                <div id="me-border">
-                    <div id="outer-me-border">
-                        <img src="resources/me.jpg" id="me-pic">
-                    </div>
+                <div id="outer-me-border">
+                    <img src="resources/me.jpg" id="me-pic">
                 </div>
                 <div id="info-border">
                     <p class="info-para">
@@ -110,11 +109,74 @@
                 </div>
             </div>
             <div id="projects" class="pages">
-                <br><br><br><br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa explicabo dolores eos
-                    inventore quis iste, minima consectetur est. Delectus expedita ea illo amet consequatur
-                    facilis
-                    corrupti nobis, eveniet beatae.</p>
+                <br><br>
+                <table>
+                    <tbody>
+                        <tr class="table-row">
+                            <td><img src="resources/Associated-lofargram-of-target-5-with-TMA-association.png"
+                                    alt="lofargram" id="lofargram" class="table-photo"></td>
+                            <td class="description"><strong>Rapid Acoustic Analysis Tool</strong> - A computer vision
+                                algorithm for translating detected target
+                                signatures into target
+                                identities. Software prototyped in Excel and executed and tested in MatLab.</td>
+                            <td class="link"><a href="https://patents.justia.com/patent/10539655">U.S. Patent Record
+                                    #10539655</a>
+                            </td>
+                        </tr>
+
+                        <tr class="table-row">
+                            <td><img src="resources/Drawing.png" alt="vulnerable-safety" id="vulnerable-safety"
+                                    class="table-photo"></td>
+                            <td class="description"><strong>Vulnerable Safety</strong> - A complete hardware and
+                                software solution to protect children and
+                                pets in hot vehicles. Written in React</td>
+                            <td class="link"><a href="https://github.com/dwmorris11/vulnerable-safety">Vulnerable Safety
+                                    Github Repo</a>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>
+                                <p></p>
+                            </td>
+                            <td class="description"><strong>Spinning Wheel</strong> - A fun random selector for
+                                selecting a random list of restaraunts, names, numbers, or whatever else you desire to
+                                select from. Hosted in an Azure container with Docker and Azure Cosmos DB container with
+                                the Mongo DB option for user data persistence. Utilizes React, Express, and D3
+                                technologies.</td>
+                            <td class="link"><a href="https://github.com/dwmorris11/spinnerWheel">Spinner Wheel
+                                    Github Repo</a>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td>
+                                <p></p>
+                            </td>
+                            <td class="description"><strong>Inspired Travel</strong> - A travel sales clone application.
+                                Utilizes React, Express, and hosted on Amazon EC2 instance with Docker.</td>
+                            <td class="link"><a
+                                    href="https://github.com/Seattle-Navigators/inspiredTravel_experiences_dustin">Inspired
+                                    Travel
+                                    Github Repo</a>
+                            </td>
+                        </tr>
+
+                        <tr class="table-row">
+                            <td>
+                                <p></p>
+                            </td>
+                            <td class="description"><strong>Wheel of Fortune</strong> - A fun Object Oriented Java
+                                application implementing our own version of Wheel Of Fortune. My contributions were
+                                designing and implementing the Wheel class, Colors class, Display class, PuzzleBoard
+                                class, WheelBoard class, Title class, Splaash Screen class, and integration with Game
+                                class. Technologies used JUnit for testing and Java SE.</td>
+                            <td class="link"><a href="https://github.com/CodeBustersJava/WheelOfFortune">Wheel of
+                                    Fortune
+                                    Github Repo</a>
+                            </td>
+                        </tr>
+
+
+                </table>
             </div>
             <div id="resume" class="pages">
                 <embed src="resources/V9_Dustin_Morris_resume.pdf" width="100%" height="100%" />

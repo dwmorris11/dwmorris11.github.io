@@ -1,0 +1,33 @@
+table {
+    width: 75vw;
+    margin: 5%;
+}
+
+td {
+    padding: 1%;
+    overflow: hidden;
+}
+
+tr {
+    padding: 1%;
+    height: 5px;
+    overflow: hidden;
+    text-align: start;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+.table-photo {
+    height: 100px;
+    width: 300px;
+}
+
+.description {
+    width: 70%;
+}
+
+.link {
+    width: 20%
+}

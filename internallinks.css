@@ -21,7 +21,7 @@
 }
 
 .pages {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     color: var(--white);
     font-family: var(--openSans);

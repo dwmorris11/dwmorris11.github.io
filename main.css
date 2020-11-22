@@ -201,9 +201,16 @@ q:after {
 }
 
 #me-pic {
-    height: 98%;
-    width: 99%;
+    position: absolute;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 20;
+    bottom: 0;
+    margin: auto;
 }
 
 #info-border {
@@ -214,19 +221,13 @@ q:after {
     grid-area: 3/8/10/12;
 }
 
-#me-border {
-    display: block;
-    border: 5px ridge var(--darkbyz);
-    grid-area: 3/2/10/6;
-    z-index: 5;
-    border-radius: 50%;
-}
-
 #outer-me-border {
-    border: 10px ridge var(--bronze);
     grid-area: 3/2/10/6;
-    z-index: 5;
-    border-radius: 50%;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 56.25% 0 0 0;
+    overflow: hidden;
 }
 
 .rolling-pin {

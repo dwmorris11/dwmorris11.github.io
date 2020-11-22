@@ -3,6 +3,15 @@ body {
     background-image: url("./resources/texture.png");
 }
 
+article {
+    overflow: scroll;
+}
+
+.pages {
+    height: 90vh;
+    overflow: scroll;
+}
+
 #main {
     display: flex;
     flex-direction: column;
@@ -26,7 +35,6 @@ body {
 }
 
 .door {
-    /*Speed of the Door animation*/
     transition: all 1s ease-in-out 3s;
 }
 
