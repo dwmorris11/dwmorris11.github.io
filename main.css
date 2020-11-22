@@ -6,6 +6,7 @@
     --deepspacesparkle: #416165;
     --borderWidth: 3px;
     --openSans: 'Open Sans', sans-serif;
+    --dancingScript: 'Dancing Script', cursive;
 }
 
 @keyframes pulse {
@@ -50,8 +51,8 @@ li {
 }
 
 #name-head {
-    font-family: var(--openSans);
-    font-size: 2.5em;
+    font-family: var(--dancingScript), var(--openSans);
+    font-size: 4.2em;
     color: var(--terracotta);
     font-weight: 500;
     margin: 0px;
