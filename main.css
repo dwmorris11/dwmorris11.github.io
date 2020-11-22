@@ -53,11 +53,17 @@ li {
     font-size: 2.5em;
     color: var(--terracotta);
     font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
 #header {
     width: 20vw;
     justify-self: center;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
 .links {
