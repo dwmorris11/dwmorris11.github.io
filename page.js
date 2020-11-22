@@ -16,7 +16,6 @@ window.onload = function () {
 
     leftDoor.addEventListener('transitionend', function (event) {
         doorElement.remove();
-        debugger;
         if (behindDoorStyle.display !== 'none') {
             behindDoor.style.display = 'grid';
         }
