@@ -15,7 +15,7 @@
 
     #me-border {
         border-color: transparent;
-        grid-area: 1/5/8/9;
+        grid-area: 2/5/4/9;
     }
 
     #right-door {
@@ -28,10 +28,14 @@
 
     #info-border {
         overflow-y: scroll;
-        grid-area: 3/1/10/13;
+        grid-area: 4/1/13/13;
     }
 
     #behind-door {
         display: none;
+    }
+
+    .rolling-pin {
+        grid-area: 1/1/2/13;
     }
 }
