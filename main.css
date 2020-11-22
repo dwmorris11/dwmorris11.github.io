@@ -44,6 +44,7 @@ li {
     padding: 5px;
     margin: 5px;
     font-family: var(--openSans);
+    color: var(--white);
     border: solid var(--borderWidth);
     width: fit-content;
 }
