@@ -1,0 +1,89 @@
+:root {
+    --white: #FFFFF0;
+    --bronze: #625834;
+    --darkbyz: #523249;
+    --terracotta: #EC7357;
+    --deepspacesparkle: #416165;
+    --borderWidth: 3px;
+    --openSans: 'Open Sans', sans-serif;
+    --dancingScript: 'Dancing Script', cursive;
+}
+
+body {
+    background-color: #333;
+    background-image: url("./resources/texture.png");
+}
+
+article {
+    overflow: scroll;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: var(--deepspacesparkle);
+    border-bottom: solid var(--white) 5px;
+}
+
+li {
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    font-family: var(--openSans);
+    color: var(--white);
+    border: solid var(--borderWidth);
+    width: fit-content;
+}
+
+q {
+    font-size: 30px;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+
+q:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -10px;
+    position: relative;
+    top: 5px;
+    font-size: 1.5em;
+}
+
+q:after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 10px;
+    position: relative;
+    top: 5px;
+    font-size: 1.5em;
+}
+
+table {
+    width: 75vw;
+    margin: 5%;
+}
+
+td {
+    padding: 1%;
+    overflow: hidden;
+}
+
+tr {
+    padding: 1%;
+    height: 5px;
+    overflow: hidden;
+    text-align: start;
+}
+
+strong {
+    text-decoration: underline;
+}

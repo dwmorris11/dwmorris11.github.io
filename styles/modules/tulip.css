@@ -1,0 +1,33 @@
+.tulip {
+    z-index: 4;
+    grid-area: 12/14/12/14;
+}
+
+#bubble {
+    display: inline-block;
+    grid-area: 2/6/4/12;
+    height: 100vh;
+    width: 50vw;
+    transform: rotate(0deg);
+}
+
+#bubble-photo {
+    z-index: 3;
+    width: 75%;
+    height: 75%;
+}
+
+#bubble-text {
+    position: fixed;
+    top: 5%;
+    left: 20%;
+    z-index: 4;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    width: 40%;
+}
+
+#name {
+    color: green;
+    font-weight: 300;
+}

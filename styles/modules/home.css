@@ -1,0 +1,52 @@
+#author {
+    font-style: italic;
+}
+
+#education-logos {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+#me-pic {
+    position: absolute;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 20;
+    bottom: 0;
+    margin: auto;
+}
+
+#info-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px double var(--darkbyz);
+    grid-area: 3/8/10/12;
+}
+
+.info-para {
+    padding: 5px;
+    margin: 5px;
+    font-family: var(--openSans);
+    color: var(--white);
+}
+
+#outer-me-border {
+    grid-area: 3/2/10/6;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 56.25% 0 0 0;
+    overflow: hidden;
+}

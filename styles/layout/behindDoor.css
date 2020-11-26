@@ -1,0 +1,8 @@
+#behind-door {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    border: black solid 5px;
+}

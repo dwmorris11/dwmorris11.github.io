@@ -26,4 +26,5 @@
     color: var(--white);
     font-family: var(--openSans);
     font-size: 1.5em;
+    overflow: scroll;
 }

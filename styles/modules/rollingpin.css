@@ -1,0 +1,23 @@
+.rolling-pin {
+    border: 5px ridge var(--bronze);
+    color: var(--terracotta);
+    background-color: var(--white);
+    grid-area: 1/5/2/9;
+    z-index: 5;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.line {
+    text-align: center;
+    line-height: 60px;
+}
+
+.line:first-child {
+    animation: roll 24s infinite ease-in;
+}
+
+.didyouknow {
+    color: gray;
+    text-decoration: var(--terracotta) wavy underline;
+}

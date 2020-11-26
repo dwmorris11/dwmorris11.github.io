@@ -1,0 +1,48 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.left-door {
+    background-color: brown;
+    width: 50vw;
+    height: 100vh;
+    transform-origin: left;
+}
+
+.right-door {
+    background-color: brown;
+    width: 50vw;
+    height: 100vh;
+    transform-origin: right;
+}
+
+.door {
+    transition: all 1s ease-in-out 3s;
+}
+
+.double-door:hover .left-door {
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+.double-door:hover .right-door {
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(105deg);
+}
+
+.double-door {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 0px;
+    overflow: hidden;
+}
+
+.center-door {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    z-index: 5;
+}

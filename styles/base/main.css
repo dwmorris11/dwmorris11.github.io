@@ -1,0 +1,55 @@
+#name-head {
+    font-family: var(--dancingScript), var(--openSans);
+    font-size: 4.2em;
+    color: var(--terracotta);
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#header {
+    width: 20vw;
+    justify-self: center;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.links {
+    text-decoration: none;
+    list-style-type: none;
+    width: 30vw;
+    flex-wrap: wrap;
+}
+
+.links li:hover {
+    animation: pulse 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.local {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+a:link li {
+    background-color: var(--darkbyz);
+    border-color: var(--bronze);
+    text-decoration: none;
+    color: black;
+}
+
+a:visited li {
+    background-color: var(--darkbyz);
+    border-color: var(--bronze);
+    text-decoration: none;
+    color: black;
+}
+
+.local li {
+    background-color: var(--darkbyz);
+    border-color: var(--bronze);
+}
