@@ -15,6 +15,12 @@ main {
     margin: 25px;
 }
 
+form {
+    margin: 5px 25px 5px 25px;
+    justify-self: center;
+    width: 20%;
+}
+
 #directions {
     justify-self: center;
 }
@@ -22,7 +28,9 @@ main {
 #mainContainer {
     display: flex;
     justify-content: space-between;
-    align-self: flex-start;
+    align-self: center;
+    width: 80vw;
+    height: fit-content;
 
 }
 
@@ -35,13 +43,37 @@ main {
 
 #wishContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-self: flex-end;
     align-items: flex-start;
     justify-self: flex-start;
-    width: 80vw;
+    width: 100%;
+    margin: 5px 50px 5px 50px;
+    padding: 50px;
 }
 
 .wishes {
     height: 90%;
+}
+
+.tile {
+    height: fit-content;
+    width: 15rem;
+    border: 1px rgba(0, 0, 0, .125) solid;
+    border-radius: .25rem;
+    margin: 5px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editButton {
+    background-color: yellow;
+}
+
+.removeButton {
+    background-color: red;
 }
