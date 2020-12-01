@@ -91,8 +91,9 @@ function remove(key) {
 }
 
 function validateURL(url, img) {
+    const defaultURL = 'https://cavchronicle.org/wp-content/uploads/2018/03/top-travel-destination-for-visas-900x504.jpg';
     if (url === "") {
-        url = 'https://cavchronicle.org/wp-content/uploads/2018/03/top-travel-destination-for-visas-900x504.jpg'
+        url = defaultURL;
     }
     fetch(url, {
             mode: "no-cors"
@@ -101,10 +102,10 @@ function validateURL(url, img) {
             if (response.ok) {
                 img.setAttribute("src", url);
             } else {
-                img.setAttribute("src", 'https://cavchronicle.org/wp-content/uploads/2018/03/top-travel-destination-for-visas-900x504.jpg');
+                img.setAttribute("src", defaultURL);
             }
         })
         .catch(() => {
-            img.setAttribute("src", 'https://cavchronicle.org/wp-content/uploads/2018/03/top-travel-destination-for-visas-900x504.jpg');
+            img.setAttribute("src", defaultURL);
         })
 }
