@@ -30,7 +30,7 @@ function createTile({
 }) {
     let uniqueKey = 'a' + ++key;
     const tile = document.createElement("div");
-    const img = document.createElement("image");
+    const img = document.createElement("img");
     const dest = document.createElement("strong");
     const loc = document.createElement("p");
     const desc = document.createElement("p");
