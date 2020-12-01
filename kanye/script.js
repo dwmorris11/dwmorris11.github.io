@@ -3,7 +3,7 @@ const quotes = document.getElementById('quotes');
 chuck.addEventListener("mouseover", getChucked);
 
 function getChucked() {
-    axios.get("http://api.icndb.com/jokes/random")
+    axios.get("https://api.icndb.com/jokes/random")
         .then((response) => {
             const joke = document.createElement('p');
             joke.innerHTML = response.data.value.joke;
