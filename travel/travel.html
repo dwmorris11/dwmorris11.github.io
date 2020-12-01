@@ -19,12 +19,12 @@
         <form id="travelDestinationForm" autocomplete>
             <div class="input">
                 <label for="destination">Destination</label>
-                <input type="text" name="destination" placeholder="Enter the name of the destination" required
-                    autofocus>
+                <input type="text" name="destination" placeholder="Enter the name of the destination" required autofocus
+                    minlength="2">
             </div>
             <div class="input">
                 <label for="location">Location</label>
-                <input type="text" name="location" placeholder="Where is it located" required>
+                <input type="text" name="location" placeholder="Where is it located" minlength="2" required>
             </div>
             <div class="input">
                 <label for="photo">Photo</label>
@@ -32,8 +32,7 @@
             </div>
             <div class="input">
                 <label for="description">Description</label>
-                <textarea name="destination" rows="4" placeholder="Enter the description of the destination"
-                    required></textarea>
+                <textarea name="destination" rows="4" placeholder="Enter the description of the destination"></textarea>
             </div>
             <div class="input">
                 <label for="submit"></label>
@@ -45,6 +44,7 @@
         </div>
     </div>
 </main>
+<script src="travel.js"></script>
 
 <body>
 
