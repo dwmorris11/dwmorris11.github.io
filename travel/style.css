@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
     background-color: gainsboro;
     display: flex;
@@ -72,8 +76,20 @@ form {
 
 .editButton {
     background-color: yellow;
+    border-radius: .25rem;
 }
 
 .removeButton {
     background-color: red;
+    color: white;
+    border-radius: .25rem;
+}
+
+.tile_location {
+    color: rgba(0, 0, 0, .5);
+}
+
+#submit {
+    background-color: blue;
+    color: white;
 }

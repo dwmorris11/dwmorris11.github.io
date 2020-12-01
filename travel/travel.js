@@ -19,11 +19,6 @@ function displayTiles() {
     for (let wish in wishes) {
         container.appendChild(wishes[wish]);
     }
-    const images = document.getElementsByTagName("image");
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = 'none';
-        images[i].style.display = 'block';
-    }
 }
 
 
