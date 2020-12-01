@@ -16,6 +16,7 @@ access(destination, (err) => {
         rm(destination, (err) => err ? console.error(error) : null);
     }
 });
+
 const getDirectories = source =>
     readdirSync(source);
 

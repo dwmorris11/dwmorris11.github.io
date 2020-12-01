@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dustin's Travel Wishlist</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<header>
+    <h1><span>Vacation Destinations Wish List</span></h1>
+    <h3><span>Found exciting places to visition on your next vacation? Use the form below to add them to your
+            wishlist
+        </span></h3>
+</header>
+<main>
+    <h2 id="directions">Enter Destination Details</h2>
+    <div id="mainContainer">
+        <form id="travelDestinationForm" autocomplete>
+            <div class="input">
+                <label for="destination">Destination</label>
+                <input type="text" name="destination" placeholder="Enter the name of the destination" required
+                    autofocus>
+            </div>
+            <div class="input">
+                <label for="location">Location</label>
+                <input type="text" name="location" placeholder="Where is it located" required>
+            </div>
+            <div class="input">
+                <label for="photo">Photo</label>
+                <input type="url" name="photo" placeholder="Enter image url of place">
+            </div>
+            <div class="input">
+                <label for="description">Description</label>
+                <textarea name="destination" rows="4" placeholder="Enter the description of the destination"
+                    required></textarea>
+            </div>
+            <div class="input">
+                <label for="submit"></label>
+                <input type="submit" name="submit" value="Add to List" />
+            </div>
+        </form>
+        <div id="wishContainer">
+
+        </div>
+    </div>
+</main>
+
+<body>
+
+</body>
+
+</html>

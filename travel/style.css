@@ -1,0 +1,47 @@
+header {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95vw;
+    margin: 25px;
+}
+
+#directions {
+    justify-self: center;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+#wishContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-start;
+    justify-self: flex-start;
+    width: 80vw;
+}
+
+.wishes {
+    height: 90%;
+}
